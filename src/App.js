@@ -2,19 +2,19 @@ import React from 'react';
 import { scrapedData } from './scrapedData'
 
 function App() {
-  const mappedItems = Object.keys(scrapedData.map(item => {
+  // Remove empty objects
+  const filteredData = scrapedData.filter(item => Object.entries(item).length !== 0);
 
-    if (Object.entries(item).length !== 0) {
+  const mappedItems = Object.keys(filteredData.map(item => {
       const episodes = Object.values(item);
-      // console.log(episodes)
-       return episodes[0].map(entry => {
-        console.log('entry', entry.textContent)
-        console.log('hyperlink', entry.hyperlink)
+      
+      const step2 = episodes[0].map(x => {
+        console.log('entry', x.textContent)
+        console.log('hyperlink', x.hyperlink)
         return <div>
-          {entry.textContent}
+          {x.textContent}
         </div>
       })
-    }
 
 
   }))
