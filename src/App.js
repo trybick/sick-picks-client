@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from 'semantic-ui-react';
 import { scrapedData } from './scrapedData';
+import './styles/App.scss';
 
 function App() {
   const filteredData = scrapedData.filter(item => Object.entries(item).length !== 0);
@@ -24,17 +25,12 @@ function App() {
             </div>
           ))}
         </Card.Content>
-        <br />
       </Card>
-      // <div>
-      // <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
-      //   {sickPick.textContent}
-      // </a>
-      // </div>
     );
+
   });
 
-  return <div>{mappedItems}</div>;
+  return <div className="wrapper">{mappedItems}</div>;
 }
 
 export default App;
