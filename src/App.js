@@ -3,21 +3,21 @@ import { scrapedData } from './scrapedData';
 
 function App() {
   const filteredData = scrapedData.filter(item => Object.entries(item).length !== 0);
-  const dataValues = Object.values(filteredData);
-  console.log('dataValues:', dataValues);
+  const episodes = Object.values(filteredData);
+  console.log('episodes:', episodes);
 
-  const res = dataValues.map(episode => {
+  const res = episodes.map(episode => {
     const episodeTitle = Object.keys(episode)[0];
     const data = episode[episodeTitle];
     console.log('episode', episode[Object.keys(episode)[0]]);
-    return data;
+    return <div>{episodeTitle}</div>;
   });
   console.log('res', res);
 
   return (
     <div>
       'test'
-      {/* {mappedItems} */}
+      {res}
     </div>
   );
 }
