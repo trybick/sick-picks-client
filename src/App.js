@@ -3,23 +3,31 @@ import { scrapedData } from './scrapedData';
 
 function App() {
   const filteredData = scrapedData.filter(item => Object.entries(item).length !== 0);
-  const episodes = Object.values(filteredData);
-  console.log('episodes:', episodes);
+  const epiData = Object.values(filteredData);
 
-  const res = episodes.map(episode => {
-    const episodeTitle = Object.keys(episode)[0];
-    const data = episode[episodeTitle];
-    console.log('episode', episode[Object.keys(episode)[0]]);
-    return <div>{episodeTitle}</div>;
+  const mappedItems = epiData.map(epi => {
+    const epiTitle = Object.keys(epi)[0];
+    const epiContent = epi[epiTitle];
+    console.log('data', epi);
+
+    return (
+      <div>
+        {epiTitle}
+        {epiContent.map(sickPick => (
+          <div>
+            <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
+              {sickPick.textContent}
+            </a>
+
+            {/* <SickPicks data={sickPicks} /> */}
+          </div>
+        ))}
+        <br />
+      </div>
+    );
   });
-  console.log('res', res);
 
-  return (
-    <div>
-      'test'
-      {res}
-    </div>
-  );
+  return <div>{mappedItems}</div>;
 }
 
 export default App;
