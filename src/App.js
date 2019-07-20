@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card } from 'semantic-ui-react';
 import { scrapedData } from './scrapedData';
 
 function App() {
@@ -9,18 +10,24 @@ function App() {
     const epiTitle = Object.keys(epi)[0];
     const epiContent = epi[epiTitle];
     console.log('data', epi);
-
     return (
       <div>
         {epiTitle}
         {epiContent.map(sickPick => (
-          <div>
-            <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
-              {sickPick.textContent}
-            </a>
-
-            {/* <SickPicks data={sickPicks} /> */}
-          </div>
+          // <div>
+          //   <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
+          //     {sickPick.textContent}
+          //   </a>
+          // </div>
+          <Card>
+            <Card.Content>
+              <Card.Header>Matthew</Card.Header>
+              <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
+            </Card.Content>
+            <Card.Content extra>
+                22 Friends
+            </Card.Content>
+          </Card>
         ))}
         <br />
       </div>
