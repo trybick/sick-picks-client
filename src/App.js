@@ -34,7 +34,7 @@ function App() {
       <LazyHero className="hero" imageSrc="https://i.imgur.com/7FsTUQl.jpg">
         <h1>Sick Picks</h1>
       </LazyHero>
-      {mappedItems}
+      <div className="grid">{mappedItems}</div>
     </Container>
   );
 }
