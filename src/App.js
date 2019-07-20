@@ -11,26 +11,26 @@ function App() {
     const epiContent = epi[epiTitle];
     console.log('data', epi);
     return (
-      <div>
-        {epiTitle}
-        {epiContent.map(sickPick => (
-          // <div>
-          //   <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
-          //     {sickPick.textContent}
-          //   </a>
-          // </div>
-          <Card>
-            <Card.Content>
-              <Card.Header>Matthew</Card.Header>
-              <Card.Description>Matthew is a musician living in Nashville.</Card.Description>
-            </Card.Content>
-            <Card.Content extra>
-                22 Friends
-            </Card.Content>
-          </Card>
-        ))}
+      <Card>
+        <Card.Content>
+          <Card.Header>{epiTitle}</Card.Header>
+
+          {epiContent.map(sickPick => (
+            <div>
+              <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
+                {sickPick.textContent}
+              </a>
+              <br />
+            </div>
+          ))}
+        </Card.Content>
         <br />
-      </div>
+      </Card>
+      // <div>
+      // <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
+      //   {sickPick.textContent}
+      // </a>
+      // </div>
     );
   });
 
