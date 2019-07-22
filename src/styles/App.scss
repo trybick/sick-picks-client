@@ -4,3 +4,9 @@
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: 10px;
 }
+
+.hero {
+  min-height: 60vh;
+  background-image: url('../images/thing1and2.jpg');
+  background-size: 1149px 761px;
+}
