@@ -9,4 +9,25 @@
   min-height: 60vh;
   background-image: url('../images/thing1and2.jpg');
   background-size: 1149px 761px;
+  background-position-y: -100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .title {
+    margin: 0 auto;
+    font-size: 3.5rem;
+    line-height: 100px;
+    height: 100px;
+    width: 540px;
+    background-color: rgb(25, 181, 254);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    text-align: center;
+    transform: rotate(-12deg);
+    border-radius: 3px;
+    margin: 0px;
+  }
 }

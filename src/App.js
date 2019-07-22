@@ -31,7 +31,9 @@ function App() {
   return (
     <Container>
       <div className="hero">
-        <h2>Title</h2>
+        <div className="title">
+          <h1>Sick Picks</h1>
+        </div>
       </div>
       <div className="grid">{mappedEpisodeData}</div>
     </Container>
