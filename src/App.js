@@ -7,10 +7,10 @@ function App() {
   const filteredData = scrapedData.filter(item => Object.entries(item).length !== 0);
   const epiData = Object.values(filteredData);
 
-  const mappedItems = epiData.map((epi, i) => {
+  const mappedEpisodeData = epiData.map((epi, i) => {
     const epiTitle = Object.keys(epi)[0];
     const epiContent = epi[epiTitle];
-    console.log('epiContent:', i)
+
     return (
       <Card centered raised>
         <Card.Content>
@@ -28,7 +28,14 @@ function App() {
     );
   });
 
-  return <Container className="wrapper">{mappedItems}</Container>;
+  return (
+    <Container>
+      <div className="hero">
+        <h2>Title</h2>
+      </div>
+      <div className="grid">{mappedEpisodeData}</div>
+    </Container>
+  );
 }
 
 export default App;
