@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Container } from 'semantic-ui-react';
-import { scrapedData } from './scrapedData';
+import { scrapedData } from './data/scrapedData';
 import './styles/App.scss';
 
 function App() {
