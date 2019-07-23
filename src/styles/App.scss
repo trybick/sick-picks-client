@@ -5,12 +5,12 @@
   grid-gap: 10px;
 }
 
-.hero {
+.header {
   min-height: 60vh;
   background-image: url('../images/thing1and2.jpg');
   background-size: 1149px 761px;
   background-position-y: -100px;
-
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,5 +29,24 @@
     transform: rotate(-12deg);
     border-radius: 3px;
     margin: 0px;
+
+    @media (max-width: 550px) {
+      height: 50px;
+      width: 270px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 100px;
+      height: 100px;
+      width: 540px;
+
+      @media (max-width: 550px) {
+        font-size: 1.7rem;
+        line-height: 50px;
+        height: 50px;
+        width: 270px;
+      }
+    }
   }
 }
