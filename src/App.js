@@ -30,7 +30,7 @@ function App() {
 
   return (
     <Container>
-      <div className="header">
+      <div className="hero">
         <div className="title">
           <h1>Sick Picks</h1>
         </div>
