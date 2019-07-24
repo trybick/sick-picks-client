@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Container } from 'semantic-ui-react';
 import { scrapedData } from './data/scrapedData';
 import './styles/App.scss';
+import { Header } from './components';
 
 function App() {
   const filteredData = scrapedData.filter(item => Object.entries(item).length !== 0);
@@ -30,11 +31,7 @@ function App() {
 
   return (
     <Container>
-      <div className="hero">
-        <div className="title">
-          <h1>Sick Picks</h1>
-        </div>
-      </div>
+      <Header />
       <div className="grid">{mappedEpisodeData}</div>
     </Container>
   );
