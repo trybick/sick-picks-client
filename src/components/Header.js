@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/App.scss';
+import './Header.scss'
 
 export const Header = () => (
   <div className="hero">
