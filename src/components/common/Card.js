@@ -5,6 +5,16 @@ import './Card.scss'
 export const Card = props => {
   const { epiContent, epiDate, epiTitle } = props;
 
+  const getOwnerClass = owner => {
+    let ownerClass = 'other'
+    if (owner.includes('Wes')) {
+      ownerClass = 'wes'
+    } else if (owner.includes('Scott')) {
+      ownerClass = 'scott'
+    }
+    return ownerClass;
+  }
+
   return (
     <div className="card">
       <div className="card-content">
@@ -14,7 +24,8 @@ export const Card = props => {
         </div>
         {epiContent.map(entry => (
           <div>
-            {entry.owner && `${entry.owner} :${' '}`}
+            {entry.owner
+              && <span className={getOwnerClass(entry.owner)}>{entry.owner} :{' '}</span>}
             <a href={entry.link} target="_blank" rel="noopener noreferrer">
               {entry.text}
             </a>
