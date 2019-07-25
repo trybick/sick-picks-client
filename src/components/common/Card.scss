@@ -7,11 +7,8 @@
   .card-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    h4 {
-
-    }
-    p {
-      justify-self: end;  
+    > p {
+      justify-self: end;
     }
   }
 
