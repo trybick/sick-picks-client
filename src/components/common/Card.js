@@ -6,8 +6,8 @@ export const Card = props => {
   const { epiContent, epiTitle } = props;
 
   return (
-    <div className="myCard">
-      <div className="myCard-content">
+    <div className="card">
+      <div>
         <h4>{epiTitle}</h4>
         {epiContent.map(entry => (
           <div>
