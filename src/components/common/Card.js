@@ -1,11 +1,10 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-/* eslint-disable react/prop-types */
+
 import React from 'react';
 import './Card.scss'
 
 export const Card = props => {
   const { epiContent, epiDate, epiTitle } = props;
-  // owner, link, text, date
 
   return (
     <div className="card">
@@ -14,8 +13,9 @@ export const Card = props => {
         <p>{epiDate}</p>
         {epiContent.map(entry => (
           <div>
+            {entry.owner}:{' '}
             <a href={entry.link} target="_blank" rel="noopener noreferrer">
-              {entry.owner}: {entry.text}
+              {entry.text}
             </a>
             <br />
           </div>
