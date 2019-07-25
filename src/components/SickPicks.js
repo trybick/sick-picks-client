@@ -12,21 +12,36 @@ export const SickPicks = () => {
     const epiContent = epi[epiTitle];
 
     return (
-      <Card centered raised>
-        <Card.Content>
-          <Card.Header>{epiTitle}</Card.Header>
-          {epiContent.map(sickPick => (
-            <div>
-              <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
-                {sickPick.textContent}
-              </a>
-              <br />
-            </div>
-          ))}
-        </Card.Content>
-      </Card>
+      <div>
+        <Card centered raised>
+          <Card.Content>
+            <Card.Header>{epiTitle}</Card.Header>
+            {epiContent.map(sickPick => (
+              <div>
+                <a href={sickPick.hyperlink} target="_blank" rel="noopener noreferrer">
+                  {sickPick.textContent}
+                </a>
+                <br />
+              </div>
+            ))}
+          </Card.Content>
+        </Card>
+      </div>
     );
   });
 
-  return <div className="grid">{mappedEpisodeData}</div>;
+  return (
+    <div className="grid">
+      <div className="myCard">
+        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+            Scott: Figma
+            Wes: CalDigit TS3 Plus Thunderbolt 3 Dock
+            Jason: Local by Flywheel
+        </a>
+        <br />
+      </div>
+
+      {mappedEpisodeData}
+    </div>
+  );
 };
