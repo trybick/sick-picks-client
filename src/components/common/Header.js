@@ -3,8 +3,8 @@ import './Header.scss';
 
 export const Header = () => (
   <div className="hero">
-    <div className="title">
-      <h1>
+    <div className="title-wrapper">
+      <h1 className="main-title">
         Sick Picks
         <br />
         <p className="subtitle">
