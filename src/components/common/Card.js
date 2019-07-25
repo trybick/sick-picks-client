@@ -15,7 +15,7 @@ export const Card = props => {
         </div>
         {epiContent.map(entry => (
           <div>
-            {entry.owner}:{' '}
+            {entry.owner && `${entry.owner} :${' '}`}
             <a href={entry.link} target="_blank" rel="noopener noreferrer">
               {entry.text}
             </a>
