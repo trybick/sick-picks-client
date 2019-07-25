@@ -12,7 +12,7 @@
     margin: 0 auto;
     font-size: 3.5rem;
     line-height: 100px;
-    height: 100px;
+    height: 140px;
     width: 540px;
     background-color: #FEC43F;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -39,4 +39,8 @@
       }
     }
   }
+}
+
+.subtext {
+  font-size: 20px;
 }
