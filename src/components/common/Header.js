@@ -7,7 +7,7 @@ export const Header = () => (
       <h1>
         Sick Picks
         <br />
-        <p className="subtext">from the podcast syntax.fm</p>
+        <p className="subtitle">from the podcast syntax.fm</p>
       </h1>
     </div>
   </div>

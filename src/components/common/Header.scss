@@ -14,15 +14,15 @@
     line-height: 100px;
     height: 140px;
     width: 540px;
-    background-color: #FEC43F;
+    background-color: #fec43f;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    color: #EEEDEE;
+    color: #eeedee;
     letter-spacing: 1px;
     text-align: center;
     transform: rotate(-12deg);
     border-radius: 3px;
     @media (max-width: 550px) {
-      height: 50px;
+      height: 75px;
       width: 270px;
     }
 
@@ -36,6 +36,13 @@
         line-height: 50px;
         height: 50px;
         width: 270px;
+      }
+
+      p {
+        font-size: 20px;
+        @media (max-width: 550px) {
+          font-size: 12px;
+        }
       }
     }
   }
