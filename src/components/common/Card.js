@@ -23,7 +23,7 @@ export const Card = props => {
           <p>{epiDate}</p>
         </div>
         {epiContent.map(entry => (
-          <div>
+          <div className="entry">
             {entry.owner
               && <span className={getOwnerClass(entry.owner)}>{entry.owner} :{' '}</span>}
             <a href={entry.link} target="_blank" rel="noopener noreferrer">
