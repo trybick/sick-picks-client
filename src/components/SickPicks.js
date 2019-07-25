@@ -9,11 +9,13 @@ export const SickPicks = () => {
   const mappedEpisodeData = epiData.map(epi => {
     const epiTitle = Object.keys(epi)[0];
     const epiContent = epi[epiTitle];
+    const epiDate = epi[epiTitle][0].date;
 
     return (
       <div>
         <Card
           epiContent={epiContent}
+          epiDate={epiDate}
           epiTitle={epiTitle}
         />
       </div>
