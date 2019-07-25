@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
-import { Header, SickPicks } from './components';
+import { Header } from './components/common';
+import { SickPicks } from './components/SickPicks';
 
 function App() {
   return (
