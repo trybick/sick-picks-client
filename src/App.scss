@@ -1,4 +1,20 @@
-.app {
+.container {
   margin: 0 auto;
-  max-width: 700px;
+  
+  @media screen and (min-width: 1200px) {
+    width: 1147px;
+  }
+
+  @media only screen and (max-width: 1199px) and (min-width: 992px) {
+    width: 933px;
+  }
+
+  @media only screen and (max-width: 991px) and (min-width: 768px) {
+    width: 723px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    width: auto;
+    margin: 0 1em;
+  }
 }
