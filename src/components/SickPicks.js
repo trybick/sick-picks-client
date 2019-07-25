@@ -33,12 +33,15 @@ export const SickPicks = () => {
   return (
     <div className="grid">
       <div className="myCard">
-        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+        <div className="myCard-content">
+          <h4>Episode 101</h4>
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer">
             Scott: Figma
             Wes: CalDigit TS3 Plus Thunderbolt 3 Dock
             Jason: Local by Flywheel
-        </a>
-        <br />
+          </a>
+          <br />
+        </div>
       </div>
 
       {mappedEpisodeData}
