@@ -8,9 +8,11 @@ export const Card = props => {
 
   return (
     <div className="card">
-      <div>
-        <h4>{epiTitle}</h4>
-        <p>{epiDate}</p>
+      <div className="card-content">
+        <div className="card-header">
+          <h4>{epiTitle}</h4>
+          <p>{epiDate}</p>
+        </div>
         {epiContent.map(entry => (
           <div>
             {entry.owner}:{' '}
