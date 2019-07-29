@@ -3,7 +3,7 @@ import React from 'react';
 import './Card.scss'
 
 export const Card = props => {
-  const { epiContent, epiDate, epiTitle } = props;
+  const { epiEntries, epiDate, epiTitle } = props;
 
   const getOwnerClass = owner => {
     let ownerClass = 'other'
@@ -22,7 +22,7 @@ export const Card = props => {
           <h4>{epiTitle}</h4>
           <p>{epiDate}</p>
         </div>
-        {epiContent.map(entry => (
+        {epiEntries.map(entry => (
           <div className="card-entry">
             {entry.owner
               && <span className={getOwnerClass(entry.owner)}>{entry.owner} :{' '}</span>}
