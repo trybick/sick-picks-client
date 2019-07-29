@@ -16,14 +16,14 @@ export const Card = props => {
   }
 
   return (
-    <div className="card">
+    <div className="card-container">
       <div className="card-content">
         <div className="card-header">
           <h4>{epiTitle}</h4>
           <p>{epiDate}</p>
         </div>
         {epiContent.map(entry => (
-          <div className="entry">
+          <div className="card-entry">
             {entry.owner
               && <span className={getOwnerClass(entry.owner)}>{entry.owner} :{' '}</span>}
             <a href={entry.link} target="_blank" rel="noopener noreferrer">
