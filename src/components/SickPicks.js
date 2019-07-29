@@ -13,5 +13,19 @@ export const SickPicks = () => {
     return <Card epiDate={epiDate} epiEntries={epiEntries} epiTitle={epiTitle} />;
   });
 
-  return <div className="grid">{mappedEpisodeData}</div>;
+  const onRandomize = () => {
+    let ul = document.querySelector('.grid');
+    for (let i = ul.children.length; i >= 0; i--) {
+      ul.appendChild(ul.children[(Math.random() * i) | 0]);
+    }
+  };
+
+  return (
+    <>
+      <button onClick={onRandomize} type="button">
+        Randomize
+      </button>
+      <div className="grid">{mappedEpisodeData}</div>
+    </>
+  );
 };
