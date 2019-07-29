@@ -22,9 +22,11 @@ export const SickPicks = () => {
 
   return (
     <>
-      <button onClick={onRandomize} type="button">
-        Randomize
-      </button>
+      <div className="random-button">
+        <button onClick={onRandomize} type="button">
+          Randomize
+        </button>
+      </div>
       <div className="grid">{mappedEpisodeData}</div>
     </>
   );

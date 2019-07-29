@@ -3,3 +3,10 @@
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   grid-gap: 10px;
 }
+
+
+.random-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
