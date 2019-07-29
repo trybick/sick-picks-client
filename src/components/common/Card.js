@@ -1,19 +1,19 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-import './Card.scss'
+import './Card.scss';
 
 export const Card = props => {
   const { epiEntries, epiDate, epiTitle } = props;
 
   const getOwnerClass = owner => {
-    let ownerClass = 'other'
+    let ownerClass = 'other';
     if (owner.includes('Wes')) {
-      ownerClass = 'wes'
+      ownerClass = 'wes';
     } else if (owner.includes('Scott')) {
-      ownerClass = 'scott'
+      ownerClass = 'scott';
     }
     return ownerClass;
-  }
+  };
 
   return (
     <div className="card-container">
@@ -24,15 +24,14 @@ export const Card = props => {
         </div>
         {epiEntries.map(entry => (
           <div className="card-entry">
-            {entry.owner
-              && <span className={getOwnerClass(entry.owner)}>{entry.owner} :{' '}</span>}
+            {entry.owner && <span className={getOwnerClass(entry.owner)}>{entry.owner} : </span>}
             <a href={entry.link} target="_blank" rel="noopener noreferrer">
               {entry.text}
             </a>
             <br />
           </div>
-        )) }
+        ))}
       </div>
     </div>
-  )
+  );
 };

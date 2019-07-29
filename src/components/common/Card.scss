@@ -1,7 +1,8 @@
 .card-container {
   margin: 0 auto;
-  box-shadow: 0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15);
-  border-radius: .3rem;
+  box-shadow: 0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34, 36, 38, 0.12),
+    0 2px 10px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.3rem;
   width: 290px;
 
   .card-content {
@@ -23,7 +24,7 @@
 
 .wes {
   font-weight: bold;
-  color: #ECCF18;
+  color: #eccf18;
 }
 
 .scott {
@@ -33,5 +34,5 @@
 
 .other {
   font-weight: bold;
-  color: #F63925;
+  color: #f63925;
 }

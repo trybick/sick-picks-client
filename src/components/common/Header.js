@@ -10,7 +10,9 @@ export const Header = () => (
         <p className="subtitle">
           from the podcast
           {'  '}
-          <a href="https://syntax.fm" target="_blank" rel="noopener noreferrer">syntax.fm</a>
+          <a href="https://syntax.fm" target="_blank" rel="noopener noreferrer">
+            syntax.fm
+          </a>
         </p>
       </h1>
     </div>

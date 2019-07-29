@@ -236,7 +236,8 @@ export const scrapedData = [
     'Episode 142': [
       {
         iteration: 23,
-        link: 'https://www.hulu.com/series/cults-and-extreme-belief-732b89b1-7af0-4bed-9a28-6ca51d2b1e69',
+        link:
+          'https://www.hulu.com/series/cults-and-extreme-belief-732b89b1-7af0-4bed-9a28-6ca51d2b1e69',
         owner: 'Travis',
         text: 'Cults and Extreme Belief and  Google Method Podcast',
         date: 'May 8th, 2019',
@@ -316,7 +317,8 @@ export const scrapedData = [
     'Episode 132': [
       {
         iteration: 33,
-        link: 'https://www.costco.com/J.A.-Henckels-International-10-piece-Capri-Granitium-Nonstick-Cookware-Set.product.100397883.html',
+        link:
+          'https://www.costco.com/J.A.-Henckels-International-10-piece-Capri-Granitium-Nonstick-Cookware-Set.product.100397883.html',
         owner: 'Scott',
         text: 'J.A. Henckels International 10-piece Capri Granitium Nonstick Cookware Set',
         date: 'Apr 3rd, 2019',
@@ -466,7 +468,8 @@ export const scrapedData = [
       },
       {
         iteration: 49,
-        link: 'https://www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q/videos?flow=grid&view=0&sort=p',
+        link:
+          'https://www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q/videos?flow=grid&view=0&sort=p',
         owner: 'Wes',
         text: 'Technology Connections',
         date: 'Feb 6th, 2019',
@@ -495,7 +498,8 @@ export const scrapedData = [
     'Episode 112': [
       {
         iteration: 53,
-        link: 'https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg',
+        link:
+          'https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg',
         owner: 'Scott',
         text: 'The Great Suspender',
         date: 'Jan 23rd, 2019',
@@ -724,7 +728,8 @@ export const scrapedData = [
         iteration: 79,
         link: 'https://amzn.to/2PASzxK',
         owner: 'Scott 1',
-        text: 'Drillbrush Bathroom Surfaces Tub, Shower, Tile and Grout All Purpose Power Scrubber Cleaning Kit',
+        text:
+          'Drillbrush Bathroom Surfaces Tub, Shower, Tile and Grout All Purpose Power Scrubber Cleaning Kit',
         date: 'Oct 26th, 2018',
       },
       {
@@ -851,7 +856,8 @@ export const scrapedData = [
       },
       {
         iteration: 91,
-        link: 'https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194/ref=sr_1_1?ie=UTF8&qid=1536628473&sr=8-1&keywords=poor+dad+rich+dad+-+robert+kiyosaki',
+        link:
+          'https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194/ref=sr_1_1?ie=UTF8&qid=1536628473&sr=8-1&keywords=poor+dad+rich+dad+-+robert+kiyosaki',
         owner: 'Wes',
         text: 'Book - Rich Dad Poor Dad',
         date: 'Sep 12th, 2018',
@@ -905,7 +911,8 @@ export const scrapedData = [
       },
       {
         iteration: 97,
-        link: 'https://open.spotify.com/user/v9iqfai0ejp8rgcb2sx9n6yis/playlist/5JTDyts3BDNzlBzemtw5zc',
+        link:
+          'https://open.spotify.com/user/v9iqfai0ejp8rgcb2sx9n6yis/playlist/5JTDyts3BDNzlBzemtw5zc',
         owner: 'Wes',
         text: 'r/posthardcore Spotify Playlist',
         date: 'Aug 22nd, 2018',
@@ -1113,7 +1120,8 @@ export const scrapedData = [
     'Episode 048': [
       {
         iteration: 117,
-        link: 'https://www.amazon.com/gp/product/B0094KM4VK/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=webo080-20&creative=9325&linkCode=as2&creativeASIN=B0094KM4VK&linkId=d4f202fb09280739e3ed764255eb1020',
+        link:
+          'https://www.amazon.com/gp/product/B0094KM4VK/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=webo080-20&creative=9325&linkCode=as2&creativeASIN=B0094KM4VK&linkId=d4f202fb09280739e3ed764255eb1020',
         owner: 'Wes',
         text: 'Melnor 4-Zone Digital Water Timer',
         date: 'May 30th, 2018',
@@ -1139,7 +1147,8 @@ export const scrapedData = [
       {
         iteration: 118,
         owner: 'Wes',
-        text: "offee table - If you're trying to build an outdoor coffee table, use a piece of granite",
+        text:
+          "offee table - If you're trying to build an outdoor coffee table, use a piece of granite",
         date: 'May 23rd, 2018',
       },
     ],
@@ -1363,7 +1372,8 @@ export const scrapedData = [
     'Episode 018': [
       {
         iteration: 147,
-        link: 'https://www.amazon.com/gp/product/1592407463/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1592407463&linkCode=as2&tag=leveluptuts01-20&linkId=cda796c9ea5df1225e445ff4d0368cb1',
+        link:
+          'https://www.amazon.com/gp/product/1592407463/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1592407463&linkCode=as2&tag=leveluptuts01-20&linkId=cda796c9ea5df1225e445ff4d0368cb1',
         owner: 'Scott',
         text: 'Just My Type',
         date: 'Nov 8th, 2017',
@@ -1484,7 +1494,8 @@ export const scrapedData = [
       },
       {
         iteration: 153,
-        link: 'https://www.walmart.com/ip/Ozark-Trail-20-Ounce-Double-Wall-Vacuum-Sealed-Tumbler/178742177',
+        link:
+          'https://www.walmart.com/ip/Ozark-Trail-20-Ounce-Double-Wall-Vacuum-Sealed-Tumbler/178742177',
         owner: 'Wes',
         text: 'Ozark Trail 20oz',
         date: 'Sep 20th, 2017',
@@ -1684,4 +1695,4 @@ export const scrapedData = [
     ],
   },
   {},
-]
+];
