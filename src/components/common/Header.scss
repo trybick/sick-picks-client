@@ -13,7 +13,7 @@
     margin: 0 auto;
     font-size: 3.5rem;
     line-height: 100px;
-    height: 140px;
+    height: 145px;
     width: 540px;
     background-color: #fec43f;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -47,10 +47,11 @@
           font-size: 12px;
         }
         a {
-          color: #f47b8f;
+          font-size: 27px;
+          color: #ab71b2;
           text-decoration: underline;
           &:hover {
-            color: #15c7da;
+            color: #15a9da;
           }
         }
       }
