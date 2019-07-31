@@ -2,8 +2,11 @@
   height: 60vh;
   background-image: url('../../images/thing1and2.jpg');
   background-position-y: -100px;
-  background-size: 1149px 761px;
-  // border-radius: 6px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // position: relative;
+
   display: flex;
   align-items: center;
   justify-content: center;
