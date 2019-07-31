@@ -15,9 +15,9 @@ export const SickPicks = () => {
   });
 
   const onRandomize = () => {
-    let ul = document.querySelector('.grid');
-    for (let i = ul.children.length; i >= 0; i--) {
-      ul.appendChild(ul.children[(Math.random() * i) | 0]);
+    let grid = document.querySelector('.grid');
+    for (let i = grid.children.length; i >= 0; i--) {
+      grid.appendChild(grid.children[(Math.random() * i) | 0]);
     }
   };
 
