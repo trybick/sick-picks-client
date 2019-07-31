@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from './common';
 import { scrapedData } from '../data/scrapedData';
 import './SickPicks.scss';
+import uniqid from 'uniqid';
 
 export const SickPicks = () => {
   const filteredData = scrapedData.filter(item => Object.entries(item).length !== 0);
@@ -10,7 +11,7 @@ export const SickPicks = () => {
     const epiEntries = epi[epiTitle];
     const epiDate = epiEntries[0].date;
 
-    return <Card epiDate={epiDate} epiEntries={epiEntries} epiTitle={epiTitle} />;
+    return <Card epiDate={epiDate} epiEntries={epiEntries} epiTitle={epiTitle} key={uniqid()} />;
   });
 
   const onRandomize = () => {

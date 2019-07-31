@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import './Card.scss';
+import uniqid from 'uniqid';
 
 export const Card = props => {
   const { epiEntries, epiDate, epiTitle } = props;
@@ -23,7 +24,7 @@ export const Card = props => {
           <p>{epiDate}</p>
         </div>
         {epiEntries.map(entry => (
-          <div className="card-entry">
+          <div className="card-entry" key={uniqid()}>
             {entry.owner && <span className={getOwnerClass(entry.owner)}>{entry.owner} : </span>}
             <a href={entry.link} target="_blank" rel="noopener noreferrer">
               {entry.text}
