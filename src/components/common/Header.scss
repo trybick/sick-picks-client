@@ -33,7 +33,6 @@
       line-height: 100px;
       height: 100px;
       width: 540px;
-      color: F47B8F;
       @media (max-width: 550px) {
         font-size: 1.7rem;
         line-height: 50px;
@@ -53,6 +52,9 @@
           text-decoration: underline;
           &:hover {
             color: #15a9da;
+          }
+          @media (max-width: 550px) {
+            font-size: 18px;
           }
         }
       }
