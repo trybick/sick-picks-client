@@ -12,6 +12,7 @@
   .card-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     > p {
       justify-self: end;
     }
