@@ -33,6 +33,7 @@
     "react/jsx-filename-extension": 0,
     "react/prop-types": 0,
     "no-bitwise": 0,
-    "import/order": 0
+    "import/order": 0,
+    "indent": 1
   }
 }
