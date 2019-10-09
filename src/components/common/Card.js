@@ -16,22 +16,26 @@ export const Card = props => {
     return ownerClass;
   };
 
+  const getEntries = () => {
+    return epiEntries.map(entry => (
+      <div className={`card-entry ${getOwnerClass(entry.owner).toLowerCase()}`} key={uniqid()}>
+        {entry.owner && <span className={getOwnerClass(entry.owner)}>{entry.owner}: </span>}
+        <a href={entry.link} target="_blank" rel="noopener noreferrer">
+          {entry.text}
+        </a>
+        <br />
+      </div>
+    ))
+  };
+
   return (
     <div className="card-container">
       <div className="card-content">
-        <div className="card-header">
-          <h4>{epiTitle}</h4>
-          <p>{epiDate}</p>
+        <p className="episode-date"><small>{epiDate}</small></p>
+        <h4 className="episode-title">{epiTitle}</h4>
+        <div className="entries-container">
+          {getEntries()}
         </div>
-        {epiEntries.map(entry => (
-          <div className="card-entry" key={uniqid()}>
-            {entry.owner && <span className={getOwnerClass(entry.owner)}>{entry.owner}: </span>}
-            <a href={entry.link} target="_blank" rel="noopener noreferrer">
-              {entry.text}
-            </a>
-            <br />
-          </div>
-        ))}
       </div>
     </div>
   );
