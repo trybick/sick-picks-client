@@ -5,6 +5,11 @@
   border-radius: 0.3rem;
   width: 290px;
 
+    &:hover {
+      transform: scale(1.1,1.2);
+      transition: cubic-bezier(0.455, 0.03, 0.515, 0.955) .2s;
+    }
+  
   .card-content {
     padding: 15px;
   }
