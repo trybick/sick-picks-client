@@ -37,3 +37,9 @@
   font-weight: bold;
   color: #f63925;
 }
+
+.card-container:hover {
+box-shadow: 5px 5px 2px red, 8px 8px 2px yellow, 10px 10px 2px #b725f6;
+background-color: rgb(135, 210, 172);
+border: 2px solid black;
+}
